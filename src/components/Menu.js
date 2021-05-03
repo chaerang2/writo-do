@@ -1,14 +1,11 @@
-import React, {useState} from "react";
+import classNames from "classnames";
+import React from "react";
 
-function Menu(){
-  const [menu,setMenu] = useState('todo')
-  const changeBtn = function(e){
-    setMenu(e.target.name)
-  }
+function Menu({menu, menuClick}){
   return(
     <nav>
-      <button className="menuBtn" name="todo" onClick={changeBtn}>할 일</button>
-      <button className="menuBtn" name="storage" onClick={changeBtn}>저장소</button>
+      <button className={classNames('menuBtn', {selectMenu:menu==='todo'})} name="storage" onClick={menuClick}>저장소</button>
+      <button className={classNames('menuBtn', {selectMenu:menu==='storage'})} name="storage" onClick={menuClick}>저장소</button>
     </nav>
   )
 }
