@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Header from "./components/Header"
 import Menu from "./components/Menu"
 import TodoContainer from "./container/TodoContainer"
+import StorageContainer from "./container/StorageContainer"
 function App() {
   const [menu, setMenu] = useState('todo')
   const menuClick = e =>{
@@ -11,7 +12,9 @@ function App() {
     <>
     <Header />
     <Menu menu={menu} menuClick={menuClick} />
-    <TodoContainer />
+    {
+      menu === 'todo' ? <TodoContainer /> : <StorageContainer />
+    }
     </>
   );
 }
