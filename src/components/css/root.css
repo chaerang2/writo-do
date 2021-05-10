@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'KoreanFrenchTypewriter';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/KoreanFrenchTypewriter.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  :root {
+  /* Color */
+  --white-color: #e6e6e6;
+  --black-color: #111111;
+  --gray-color: #2c2c2c;
+
+  /* Size */
+  --spacing: 12px;
+  --spacing-small: 6px;
+  --avatar-size: 36px;
+  
+  /* Font Size */
+  --font-large: 20px;
+  --font-regular: 16px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+  
+  /* etc */
+  --border-radius: 8px;
+  
+  /* font */
+  --type-font:'KoreanFrenchTypewriter';
+  }

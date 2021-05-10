@@ -1,0 +1,21 @@
+@import './root.css';
+
+.header{
+/* background-color: var(--white-color); */
+height: 350px;
+}
+
+.title{
+padding-top: 90px;
+text-align: center;
+font-family: var(--type-font);
+font-size: 90px;
+font-weight: 100;
+}
+
+.sub_title{
+text-align: center;
+font-family: var(--type-font);
+font-size: 24px;
+font-weight: 100;
+}
