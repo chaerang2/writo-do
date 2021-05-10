@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import classNames from "classnames";
-import deleteImg from '../css/imgs/delete_black_24dp.svg'
+import deleteImg from './css/imgs/delete_black_24dp.svg'
 
 const Storage = ({storage, storageDel, commCreate, commDel}) => {
   const [comment, setComment] = useState('');
