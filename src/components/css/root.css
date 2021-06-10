@@ -1,31 +1,81 @@
-@font-face {
-  font-family: 'KoreanFrenchTypewriter';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/KoreanFrenchTypewriter.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  }
-  
-  :root {
-  /* Color */
-  --white-color: #e6e6e6;
-  --black-color: #111111;
-  --gray-color: #2c2c2c;
 
-  /* Size */
-  --spacing: 12px;
-  --spacing-small: 6px;
-  --avatar-size: 36px;
+  
+  /* :root { */
+    /* Color */
+    /* --white-color: #e6e6e6; */
+    /* --black-color: #111111; */
+    /* --gray-color: #2c2c2c; */
+  
+    /* Size */
+    /* --spacing: 12px; */
+    /* --spacing-small: 6px; */
+    /* --avatar-size: 36px; */
   
   /* Font Size */
-  --font-large: 20px;
-  --font-regular: 16px;
-  --font-medium: 14px;
-  --font-small: 12px;
-  --font-micro: 10px;
-  
-  /* etc */
-  --border-radius: 8px;
-  
-  /* font */
-  --type-font:'KoreanFrenchTypewriter';
+    /* --font-large: 20px; */
+    /* --font-regular: 16px; */
+    /* --font-medium: 14px; */
+    /* --font-small: 12px; */
+    /* --font-micro: 10px; */
+    /* etc */
+    /* --border-radius: 8px; */
+    /* font */
+  /* } */
+
+  @font-face {
+    font-family: 'KoreanFrenchTypewriter';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/KoreanFrenchTypewriter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  header{
+    height: 350px;
+  }
+  .header_title{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 100;
+    font-family: 'KoreanFrenchTypewriter';
+  }
+
+  .header_sub_title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'KoreanFrenchTypewriter';
+  }
+
+  /* Menu */
+  nav{
+    height: 50px;
+  }
+
+  .menu_btnbox{
+    margin: 0 auto;
+    width: 400px;
+    height: 50px;
+  }
+
+  .menuBtn{
+    font-family: 'KoreanFrenchTypewriter';
+    width: 195px;
+    height: 50px;
+    background-color: #e6e6e6;
+    border: 1px solid #111111;
+    border-radius: 8px 0 0 8px;
+    font-size: 18px;
+  }
+  .menuBtn:last-child{
+    border-radius: 0 8px 8px 0;
+  }
+
+  .menuBtn:focus{
+    border: 1px solid #111111;
+  }
+
+  .selectMenu{
+    background-color: #111111;
+    color: #e6e6e6;
   }
