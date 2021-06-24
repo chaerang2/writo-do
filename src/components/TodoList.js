@@ -4,7 +4,7 @@ import Todo from './Todo'
 const TodoList = ({todos,doneToggle,todoDel}) => {
   return (
     <ul className='todo_list'>
-      {todos.map(todo => (
+      {todos.reverse().map(todo => (
         <Todo key={todo.id} todo={todo} doneToggle={doneToggle} todoDel={todoDel} />
       ))}
     </ul>
