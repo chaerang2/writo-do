@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import StorageList from './StorageList'
+import enterImg from './css/imgs/subdirectory_arrow_left_black_24dp.svg'
 
 const Storage = ({storages,storageCreate, storageDel, commCreate, commDel}) => {
   const [text, setText] = useState('')
@@ -11,13 +12,13 @@ const Storage = ({storages,storageCreate, storageDel, commCreate, commDel}) => {
     setText('');
   }
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <input value={text} onChange={StorageOnChange}></input>
-        <button type="submit">등록</button>
+    <div className='contents_box'>
+      <form onSubmit={onSubmit} className='input_form'>
+        <input value={text} onChange={StorageOnChange} className='input_box'></input>
+        <button type="submit" className='input_btn'><img className='input_img' src={enterImg}></img></button>
       </form>
       {
-        storages.length === 0 ? <div>저장소가 비어있어요.</div> : <StorageList storages={storages} storageDel={storageDel} commCreate={commCreate} commDel={commDel} />
+        storages.length === 0 ? <div className='no_storage'>저장소가 비어있어요.</div> : <StorageList storages={storages} storageDel={storageDel} commCreate={commCreate} commDel={commDel} />
       }
     </div>
   )

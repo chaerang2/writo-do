@@ -54,6 +54,7 @@
 
   .menu_btnbox{
     margin: 0 auto;
+    margin-top: 100px;
     width: 400px;
     height: 50px;
   }
@@ -78,4 +79,156 @@
   .selectMenu{
     background-color: #111111;
     color: #e6e6e6;
+  }
+
+  /* 컨텐츠박스 */
+  .contents_box{
+    border: 1px solid #111111;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 800px;
+    min-height: 500px;
+  }
+
+  .input_form{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 700px;
+  }
+  .input_box{
+    flex-grow: 9;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 15px;
+  }
+  .input_btn{
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+  /* 할일 */
+
+  .no_todo{
+    text-align: center;
+    font-family: 'KoreanFrenchTypewriter';
+    font-size: 26px;
+    margin-top: 150px;
+  }
+  .todo_list{
+    width: 700px;
+    margin: 0 auto;
+  }
+  .todo_entry{
+    display: block;
+    height: 35px;
+  }
+  .todo_toggle{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #111111;
+  }
+  .doneTodo{
+    background: #111111;
+  }
+  .todo_text{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  .trash_img{
+    display: none;
+  }
+  .todo_delete{
+    display: inline-block;
+    position: relative;
+    left: 650px;
+  }
+
+
+  /* storage */
+  .no_storage{
+    text-align: center;
+    font-family: 'KoreanFrenchTypewriter';
+    font-size: 26px;
+    margin-top: 150px;
+  }
+  .storage_list{
+    width: 700px;
+    margin: 0 auto;
+  }
+  .storage_entry{
+    display: flex;
+    margin: 5px 0;
+  }
+  .right_arrow{
+    background: none;
+    background-image: url(./imgs/outline_chevron_right_black_24dp.png);
+    width: 25px;
+    height: 25px;
+  }
+  .down_arrow{
+    background-image: url(./imgs/outline_expand_more_black_24dp.png);
+  }
+  .storage_text{
+    display: inline-block;
+    width: 640px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .hidden_comment{
+    display: none;
+  }
+  .view_list{
+    display: block;
+    margin-left: 40px;
+  }
+  .storage_delete{
+    display: inline-block;
+  }
+  .comment_form{
+    display: flex;
+    margin-top: 15px;
+  }
+  .comment_input{
+    width: 580px;
+    height: 25px;
+    border-radius: 8px;
+    flex-grow: 7;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  .comment_btn{
+    width: 50px;
+    height: 25px;
+    border-radius: 8px;
+    flex-grow: 3;
+    background-image: url(./imgs/subdirectory_arrow_left_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    margin-left: 10px;
+  }
+  .comment_list{
+    list-style: inside;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .comment_text{
+    display: inline-block;
+    width: 600px;
+  }
+  .comm_delete{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    position: absolute;
+    right: 20px;
   }

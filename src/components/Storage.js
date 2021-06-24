@@ -24,19 +24,21 @@ const Storage = ({storage, storageDel, commCreate, commDel}) => {
   };
   return (
     <li onMouseOver={trashToggle} onMouseOut={trashToggle}>
-      <button className={classNames({down_arrow:list})} onClick={commentToggle}>아래</button>
-      <p>{storage.text}</p>
-      <img className={classNames({storage_delete:trash})} src={deleteImg} onClick={()=>storageDel(storage.id)}></img>
-      <div className={classNames({view_list:list})}>
-        <form onSubmit={commentSubmit}>
-          <input value={comment} onChange={commentOnChange}></input>
-          <button type="submit">등록</button>
+      <div className='storage_entry'>
+        <button className={classNames('right_arrow',{down_arrow:list})} onClick={commentToggle}></button>
+        <p className='storage_text'>{storage.text}</p>
+        <img className={classNames('trash_img',{storage_delete:trash})} src={deleteImg} onClick={()=>storageDel(storage.id)}></img>
+      </div>
+      <div className={classNames('hidden_comment',{view_list:list})}>
+        <form onSubmit={commentSubmit} className='comment_form'>
+          <input value={comment} onChange={commentOnChange} className='comment_input'></input>
+          <button type="submit" className='comment_btn'></button>
         </form>
         <ul>
           {storage.comment.map(comm=>(
-            <li>
-              <span onMouseOver={commTrashToggle} onMouseOut={commTrashToggle}>{comm.text}</span>
-              <img className={classNames({comm_delete:commTrash})} src={deleteImg} onClick={()=>commDel(storage.id,comm.commId)}></img>
+            <li className='comment_list' onMouseOver={commTrashToggle} onMouseOut={commTrashToggle}>
+              <span className='comment_text'>{comm.text}</span>
+              <img className={classNames('trash_img',{comm_delete:commTrash})} src={deleteImg} onClick={()=>commDel(storage.id,comm.commId)}></img>
             </li>
           ))}
         </ul>

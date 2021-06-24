@@ -6,6 +6,9 @@
 a{
   text-decoration: none;
 }
+ul,li{
+  list-style: none;
+}
 button,
 button:focus {
   border: none;
@@ -17,4 +20,9 @@ body{
   font-family: 'Noto Sans', sans-serif;;
   background-color: #e6e6e6;
   color: #111111;
+}
+input,
+input:focus{
+  border:none;
+  outline:none
 }
